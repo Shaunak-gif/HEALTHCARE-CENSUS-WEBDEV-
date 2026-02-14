@@ -170,9 +170,9 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 ## 📬 Contact
 
 **Your Name**
-- GitHub: [@your-username](https://github.com/your-username)
-- Email: your.email@example.com
-- LinkedIn: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
+- GitHub: Shaunak-gif
+- Email: shaunakdandavate@gmail.com
+- LinkedIn: https://linkedin.com/in/shaunakdandavate
 
 ---
 
