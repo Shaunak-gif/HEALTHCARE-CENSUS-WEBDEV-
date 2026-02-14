@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Census - National Health Data Analytics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>HealthCensus</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#data" class="nav-link">Data Insights</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Healthcare Census 2024</h1>
+            <p class="hero-subtitle">Comprehensive health data analytics for better community outcomes</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <h3 id="participants-count">0</h3>
+                    <p>Participants</p>
+                </div>
+                <div class="stat">
+                    <h3 id="regions-count">0</h3>
+                    <p>Regions Covered</p>
+                </div>
+                <div class="stat">
+                    <h3 id="accuracy-count">0</h3>
+                    <p>% Accuracy</p>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('about')">Learn More</button>
+                <button class="btn btn-secondary" onclick="openModal()">Start Survey</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="floating-icons">
+                <i class="fas fa-stethoscope"></i>
+                <i class="fas fa-pills"></i>
+                <i class="fas fa-heartbeat"></i>
+                <i class="fas fa-user-md"></i>
+                <i class="fas fa-hospital"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Healthcare Census</h2>
+                <p>Empowering communities through comprehensive health data collection and analysis</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Mission</h3>
+                    <p>The Healthcare Census initiative aims to create a comprehensive database of health information to improve public health policies, resource allocation, and community health outcomes. We collect, analyze, and report on critical health metrics across diverse populations.</p>
+                    
+                    <h3>Why It Matters</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Evidence-based healthcare policy development</li>
+                        <li><i class="fas fa-check"></i> Improved resource allocation for underserved areas</li>
+                        <li><i class="fas fa-check"></i> Early identification of health trends and disparities</li>
+                        <li><i class="fas fa-check"></i> Better emergency preparedness and response</li>
+                        <li><i class="fas fa-check"></i> Enhanced community health program planning</li>
+                    </ul>
+                    
+                    <div class="team-info">
+                        <h3>Our Team</h3>
+                        <p>Led by healthcare professionals, data scientists, and public health experts committed to improving health outcomes through data-driven insights.</p>
+                    </div>
+                </div>
+                <div class="about-features">
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Data Security</h4>
+                        <p>HIPAA-compliant data protection with advanced encryption and privacy safeguards</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Real-time Analytics</h4>
+                        <p>Live dashboards and reporting tools for immediate health insights</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-users"></i>
+                        <h4>Community Focus</h4>
+                        <p>Tailored analysis for specific communities and demographic groups</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-globe"></i>
+                        <h4>Wide Coverage</h4>
+                        <p>Nationwide data collection with local community insights</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive health data solutions for various stakeholders</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-poll"></i>
+                    <h3>Health Surveys</h3>
+                    <p>Comprehensive questionnaires covering chronic diseases, mental health, lifestyle factors, and access to care</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>Data Analysis</h3>
+                    <p>Advanced statistical analysis and predictive modeling for health trend identification</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-file-medical-alt"></i>
+                    <h3>Health Reports</h3>
+                    <p>Detailed community health profiles and policy recommendation reports</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Consultation</h3>
+                    <p>Expert guidance for healthcare organizations and government agencies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Insights Section -->
+    <section id="data" class="data-insights">
+        <div class="container">
+            <div class="section-header">
+                <h2>Health Data Insights</h2>
+                <p>Key findings from our latest census data</p>
+            </div>
+            <div class="insights-container">
+                <div class="insight-card">
+                    <h3>Chronic Disease Prevalence</h3>
+                    <div class="chart-placeholder">
+                        <canvas id="diseaseChart"></canvas>
+                    </div>
+                </div>
+                <div class="insight-card">
+                    <h3>Healthcare Access by Region</h3>
+                    <div class="access-stats">
+                        <div class="access-item">
+                            <span class="region">Urban Areas</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                            <span class="percentage">85%</span>
+                        </div>
+                        <div class="access-item">
+                            <span class="region">Suburban</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 72%"></div>
+                            </div>
+                            <span class="percentage">72%</span>
+                        </div>
+                        <div class="access-item">
+                            <span class="region">Rural Areas</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 58%"></div>
+                            </div>
+                            <span class="percentage">58%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Get involved in improving community health outcomes</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>**info@healthcensus.org**</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>1-800-HEALTH1</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Health Data Drive<br>Analytics City, DC 20001</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" required>
+                                <option value="">Select Subject</option>
+                                <option value="participation">Participate in Census</option>
+                                <option value="data-request">Data Request</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Survey Modal -->
+    <div id="surveyModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Quick Health Assessment</h2>
+            <form id="surveyForm">
+                <div class="form-group">
+                    <label>Age Group:</label>
+                    <select required>
+                        <option value="">Select Age</option>
+                        <option value="18-25">18-25</option>
+                        <option value="26-35">26-35</option>
+                        <option value="36-50">36-50</option>
+                        <option value="51-65">51-65</option>
+                        <option value="65+">65+</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Overall Health:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="health" value="excellent"> Excellent</label>
+                        <label><input type="radio" name="health" value="good"> Good</label>
+                        <label><input type="radio" name="health" value="fair"> Fair</label>
+                        <label><input type="radio" name="health" value="poor"> Poor</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Exercise Frequency:</label>
+                    <select required>
+                        <option value="">Select Frequency</option>
+                        <option value="daily">Daily</option>
+                        <option value="weekly">3-5 times per week</option>
+                        <option value="occasionally">Occasionally</option>
+                        <option value="rarely">Rarely</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Survey</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>HealthCensus</h3>
+                    <p>Building healthier communities through data-driven insights</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Privacy & Security</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Data Security</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Healthcare Census. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
